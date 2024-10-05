@@ -1,0 +1,51 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: D:/Balancing_Robot/Software/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe cmTC_9e1ad && [1/2] Building C object CMakeFiles/cmTC_9e1ad.dir/src.c.o
+[2/2] Linking C executable cmTC_9e1ad
+FAILED: cmTC_9e1ad 
+cmd.exe /C "cd . && C:\SysGCC\raspberry_stretch\bin\arm-linux-gnueabihf-gcc.exe   CMakeFiles/cmTC_9e1ad.dir/src.c.o -o cmTC_9e1ad   && cd ."
+CMakeFiles/cmTC_9e1ad.dir/src.c.o: In function `main':
+src.c:(.text+0x40): undefined reference to `pthread_create'
+src.c:(.text+0x4c): undefined reference to `pthread_detach'
+src.c:(.text+0x58): undefined reference to `pthread_cancel'
+src.c:(.text+0x68): undefined reference to `pthread_join'
+src.c:(.text+0x78): undefined reference to `pthread_atfork'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: D:/Balancing_Robot/Software/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe cmTC_b3147 && [1/2] Building C object CMakeFiles/cmTC_b3147.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b3147
+FAILED: cmTC_b3147 
+cmd.exe /C "cd . && C:\SysGCC\raspberry_stretch\bin\arm-linux-gnueabihf-gcc.exe -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_b3147.dir/CheckFunctionExists.c.o -o cmTC_b3147  -lpthreads && cd ."
+c:/sysgcc/raspberry_stretch/bin/../lib/gcc/arm-linux-gnueabihf/6/../../../../arm-linux-gnueabihf/bin/ld.exe: cannot find -lpthreads
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+

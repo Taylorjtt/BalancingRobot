@@ -1,0 +1,24 @@
+# ninja log v5
+79	156	6984790644711142	Software	71647f3d812b7030
+115	197	6985562486073198	bot	4fa9c30388241b43
+7	84	6985564255908401	CMakeFiles/bot.dir/Fusion/FusionAhrs.c.o	a4c6dd827f83b75c
+2	89	6985564726657342	build.ninja	4e76c1f909291da8
+2	84	6985564255914525	CMakeFiles/bot.dir/main.c.o	f766c4c4eb3739fe
+10	69	6985564255738140	CMakeFiles/bot.dir/common.c.o	d0a7c6c9a87f89f0
+5	78	6985564255848353	CMakeFiles/bot.dir/rpi.c.o	366a7157cf06e1ec
+13	71	6985564255768169	CMakeFiles/bot.dir/Fusion/FusionCompass.c.o	378ee1943514b3a0
+15	72	6985564255788184	CMakeFiles/bot.dir/Fusion/FusionOffset.c.o	6186b80aa3edd839
+23	94	6985564729281335	CMakeFiles/bot.dir/Fusion/FusionOffset.c.o	6186b80aa3edd839
+13	95	6985564729281335	CMakeFiles/bot.dir/Fusion/FusionCompass.c.o	378ee1943514b3a0
+10	96	6985564729303127	CMakeFiles/bot.dir/common.c.o	d0a7c6c9a87f89f0
+19	112	6985564729459683	CMakeFiles/bot.dir/CAN/can-socket.c.o	99276bd21b355f5
+2	112	6985564729459683	CMakeFiles/bot.dir/rpi.c.o	366a7157cf06e1ec
+7	119	6985564729541465	CMakeFiles/bot.dir/Fusion/FusionAhrs.c.o	a4c6dd827f83b75c
+5	120	6985564729551474	CMakeFiles/bot.dir/main.c.o	f766c4c4eb3739fe
+16	121	6985564729571494	CMakeFiles/bot.dir/IMU/Adafruit_BMP085_U.c.o	97343bca77664017
+31	125	6985564729611526	CMakeFiles/bot.dir/TMotor/TMotor.c.o	ab8d769fcea4262c
+26	126	6985564729621533	CMakeFiles/bot.dir/IMU/Adafruit_L3GD20_U.c.o	f8c4a0b7a5a2cb1f
+29	132	6985564729681587	CMakeFiles/bot.dir/IMU/Adafruit_LSM303_U.c.o	163902c84ab1b903
+1	80	6985570379265845	CMakeFiles/bot.dir/IMU/Adafruit_BMP085_U.c.o	97343bca77664017
+2	76	6985574364035412	CMakeFiles/bot.dir/IMU/Adafruit_L3GD20_U.c.o	f8c4a0b7a5a2cb1f
+76	167	6985574364912433	bot	4cdb56c7ed0315fe
